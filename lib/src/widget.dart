@@ -404,7 +404,7 @@ class SmartSelect<T> extends StatefulWidget {
     S2ComplexWidgetBuilder<S2SingleState<T>, S2Choice<T>>?
         choiceSecondaryBuilder,
     IndexedWidgetBuilder? choiceDividerBuilder,
-    S2WidgetBuilder<S2SingleState<T>>? choiceEmptyBuilder,
+    WidgetBuilder? choiceEmptyBuilder,
     S2ComplexWidgetBuilder<S2SingleState<T>, S2Group<T>>? groupBuilder,
     S2ComplexWidgetBuilder<S2SingleState<T>, S2Group<T>>? groupHeaderBuilder,
     S2ChoiceConfig? choiceConfig,
@@ -1853,7 +1853,7 @@ class S2SingleState<T> extends S2State<T> {
 
   @override
   Widget? get _customChoiceEmpty {
-    return builder!.choiceEmpty?.call(modalContext, this);
+    return builder!.choiceEmpty?.call(modalContext);
   }
 
   @override

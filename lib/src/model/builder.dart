@@ -95,7 +95,9 @@ class S2SingleBuilder<T> extends S2Builder<T> {
   final S2ComplexWidgetBuilder<S2SingleState<T>, S2Choice<T>>? choiceSecondary;
 
   /// Builder for custom empty display
-  final S2WidgetBuilder<S2SingleState<T>>? choiceEmpty;
+  final WidgetBuilder? choiceEmpty;
+
+  
 
   /// default contructor
   const S2SingleBuilder({
@@ -142,7 +144,7 @@ class S2SingleBuilder<T> extends S2Builder<T> {
     S2ComplexWidgetBuilder<S2SingleState<T>, S2Choice<T>>? choiceTitle,
     S2ComplexWidgetBuilder<S2SingleState<T>, S2Choice<T>>? choiceSubtitle,
     S2ComplexWidgetBuilder<S2SingleState<T>, S2Choice<T>>? choiceSecondary,
-    S2WidgetBuilder<S2SingleState<T>>? choiceEmpty,
+    WidgetBuilder? choiceEmpty,
     IndexedWidgetBuilder? choiceDivider,
     // WidgetBuilder choiceProgress,
     // S2ChoiceBuilder<T> choicePager,
